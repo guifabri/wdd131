@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Filtered Temple Album - Erick</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Erick. Filtered Temple Album.">
+    <meta name="author" content="Erick">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">Temple Album</span>
+        <button id="menu-button" aria-label="Menu" aria-expanded="false">&#9776;</button>
+        <nav id="navigation" class="nav-hidden">
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="old-link">Old</a>
+            <a href="#" id="new-link">New</a>
+            <a href="#" id="large-link">Large</a>
+            <a href="#" id="small-link">Small</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 id="gallery-title">Home</h1>
+        <div class="temple-grid" id="temple-gallery">
+            <!-- Temple cards will be dynamically injected here via JS -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Erick. USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

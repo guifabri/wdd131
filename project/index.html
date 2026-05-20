@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caracas City Guide</title>
+    <meta name="description" content="Final project for WDD 131 featuring dynamic and responsive city guide pages.">
+    <meta name="author" content="Erick">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <p class="site-title">Caracas City Guide</p>
+            <button id="menuButton" aria-label="Open navigation" aria-expanded="false">Menu</button>
+            <nav id="mainNav" class="nav-hidden">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="join.html">Join</a>
+                <a href="siteplan.html">Site Plan</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Explore Caracas with Confidence</h1>
+            <p>Find recommended places, simple travel tips, and community updates.</p>
+        </section>
+        <section>
+            <h2>Featured Places</h2>
+            <div class="card-grid" id="featuredPlaces"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Erick. Venezuela</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>

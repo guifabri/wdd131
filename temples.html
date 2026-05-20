@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Album - Erick</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Erick. Temple Album.">
+    <meta name="author" content="Erick">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">Temple Album</span>
+        <button id="menu-button" aria-label="Menu" aria-expanded="false">&#9776;</button>
+        <nav id="navigation" class="nav-hidden">
+            <a href="index.html">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Temple Album</h1>
+        <div class="temple-grid">
+            <figure>
+                <img src="images/temple.png" alt="Temple 1" loading="lazy" width="400" height="250">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Temple 2" loading="lazy" width="400" height="250">
+                <figcaption>Manti Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Temple 3" loading="lazy" width="400" height="250">
+                <figcaption>St. George Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Temple 4" loading="lazy" width="400" height="250">
+                <figcaption>Logan Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Temple 5" loading="lazy" width="400" height="250">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Temple 6" loading="lazy" width="400" height="250">
+                <figcaption>Oquirrh Mountain Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Temple 7" loading="lazy" width="400" height="250">
+                <figcaption>Mount Timpanogos Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Temple 8" loading="lazy" width="400" height="250">
+                <figcaption>Bountiful Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple.png" alt="Temple 9" loading="lazy" width="400" height="250">
+                <figcaption>Jordan River Utah Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Erick. USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

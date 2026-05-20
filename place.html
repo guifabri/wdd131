@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page - Japan</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Japan Country Page with Data and Weather details.">
+    <meta name="author" content="Erick">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Japan</h1>
+            <span class="subtitle">Land of the Rising Sun</span>
+        </div>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- Usually we would have a small and large version. We use the same for illustration here, with WebP format. -->
+                <source srcset="images/japan.webp" media="(min-width: 768px)">
+                <img src="images/japan.webp" alt="Beautiful Mount Fuji in Japan" loading="lazy" width="800" height="400">
+            </picture>
+        </div>
+
+        <div class="info-sections">
+            <section class="card data-card">
+                <h2>Data</h2>
+                <hr>
+                <div class="data-item"><strong>Area:</strong> 377,975 sq km</div>
+                <div class="data-item"><strong>Population:</strong> 125,100,000</div>
+                <div class="data-item"><strong>Capital:</strong> Tokyo</div>
+                <div class="data-item"><strong>Languages:</strong> Japanese</div>
+                <div class="data-item"><strong>Currency:</strong> Japanese Yen (JPY)</div>
+                <div class="data-item"><strong>Time Zone:</strong> UTC+9</div>
+                <div class="data-item"><strong>Calling Code:</strong> +81</div>
+                <div class="data-item"><strong>Internet TLD:</strong> .jp</div>
+            </section>
+            
+            <section class="card weather-card">
+                <h2>Weather</h2>
+                <hr>
+                <div class="weather-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Sunny Weather Icon" width="64" height="64">
+                </div>
+                <div class="data-item"><strong>Temperature:</strong> <span id="temperature">8</span> &deg;C</div>
+                <div class="data-item"><strong>Conditions:</strong> Mostly Sunny</div>
+                <div class="data-item"><strong>Wind:</strong> <span id="windspeed">10</span> km/h</div>
+                <div class="data-item"><strong>Wind Chill:</strong> <span id="windchill"></span></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Erick. USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

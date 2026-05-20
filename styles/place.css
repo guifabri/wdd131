@@ -1,0 +1,136 @@
+/* Base CSS for WDD 131 Country Page */
+
+:root {
+    --primary-color: #ba0020; /* Japan Red */
+    --secondary-color: #2c3e50;
+    --accent-color: #f1c40f;
+    --text-color: #333333;
+    --bg-color: #f4f4f4;
+    --white: #ffffff;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Main Content */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero picture img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 7;
+}
+
+/* Info Sections Grid */
+.info-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .info-sections {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Cards */
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    position: relative;
+}
+
+.card h2 {
+    font-family: var(--font-heading);
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.card hr {
+    border: none;
+    border-top: 2px solid var(--primary-color);
+    width: 50px;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* CSS Pseudo-selectors requirement */
+.data-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.data-item:last-child {
+    border-bottom: none;
+}
+
+.data-item:hover {
+    background-color: #f9f9f9;
+}
+
+.weather-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

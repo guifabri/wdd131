@@ -1,0 +1,147 @@
+/* Base CSS for WDD 131 Temple Album (Mobile View) */
+
+:root {
+    --primary-color: #0f3057;
+    --secondary-color: #0088a9;
+    --accent-color: #e7e7de;
+    --text-color: #333333;
+    --bg-color: #f4f4f4;
+    --white: #ffffff;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+header span#course-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    display: block; /* Shown in mobile */
+}
+
+nav {
+    display: none; /* Hidden by default in mobile, toggled by JS */
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+nav.nav-visible {
+    display: flex;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a:last-child {
+    border-bottom: none;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--primary-color);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    font-family: var(--font-heading);
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+/* Grid Layout for Mobile (1 Column) */
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+figure {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+figure:hover {
+    transform: scale(1.02);
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    aspect-ratio: 16 / 10;
+}
+
+figcaption {
+    margin-top: 1rem;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
