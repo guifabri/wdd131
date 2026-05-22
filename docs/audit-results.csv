@@ -1,0 +1,10 @@
+week,audit_url,target_page,result,run_date,owner,notes,issue_ref
+W01,https://byui-cse.github.io/wdd-audits/wdd131-w01-homepage.html,https://guifabri.github.io/wdd131/,Not Run,2026-05-21,guifabri,Initial baseline row created; pending first audit execution,
+W02,https://byui-cse.github.io/wdd-audits/wdd131-w02-picture-album.html,https://guifabri.github.io/wdd131/temples.html,Not Run,2026-05-21,guifabri,Initial baseline row created; pending first audit execution,
+W03,https://byui-cse.github.io/wdd-audits/wdd131-w03-place.html,https://guifabri.github.io/wdd131/place.html,Not Run,2026-05-21,guifabri,Initial baseline row created; pending first audit execution,
+W04,https://byui-cse.github.io/wdd-audits/wdd131-w04-picture-album.html,https://guifabri.github.io/wdd131/filtered-temples.html,Not Run,2026-05-21,guifabri,Initial baseline row created; pending first audit execution,
+W05,https://byui-cse.github.io/wdd-audits/wdd131-w05-form.html,https://guifabri.github.io/wdd131/form.html,Not Run,2026-05-21,guifabri,Initial baseline row created; pending first audit execution,
+W06,N/A,https://guifabri.github.io/wdd131/project/,Not Run,2026-05-21,guifabri,Manual QA week (no official audit URL),
+W07,N/A,N/A,Not Run,2026-05-21,guifabri,Exam prep week (no technical audit),
+W01,N/A,https://guifabri.github.io/wdd131/,Not Run,2026-05-21,guifabri,Local pre-audit implementation/checklist completed; pending official BYUI audit run,
+W01,https://byui-cse.github.io/wdd-audits/wdd131-w01-homepage.html,https://guifabri.github.io/wdd131/,Blocked,2026-05-21,guifabri,Could not execute interactive BYUI audit in this CLI environment (no Node/NPX/browser automation available). Run in browser with ?user=guifabri,W01-AUDIT-BLOCKED-ENV
