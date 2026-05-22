@@ -8,7 +8,7 @@ GitHub Pages Base URL: https://guifabri.github.io/wdd131/
 
 | Week | Sprint Focus | Target Page | Audit Tool | Status | Run Date | Evidence (Published URL) | Notes / Next Action |
 |---|---|---|---|---|---|---|---|
-| W01 | Home Page | `index.html` | https://byui-cse.github.io/wdd-audits/wdd131-w01-homepage.html | Blocked | 2026-05-21 | https://guifabri.github.io/wdd131/ | Audit page requires interactive browser JS execution. Current CLI lacks Node/NPX/browser automation. Run manually in browser using `?user=guifabri` and log result. |
+| W01 | Home Page | `index.html` | https://byui-cse.github.io/wdd-audits/wdd131-w01-homepage.html | Fail | 2026-05-21 | https://guifabri.github.io/wdd131/ | Audit reported image-size failures (>125 kB). Remediation implemented (optimized images), pending re-audit confirmation. |
 | W02 | Picture Album | `temples.html` | https://byui-cse.github.io/wdd-audits/wdd131-w02-picture-album.html | Not Run | - | https://guifabri.github.io/wdd131/temples.html | Run audit and log pass/fail findings. |
 | W03 | Country Page | `place.html` | https://byui-cse.github.io/wdd-audits/wdd131-w03-place.html | Not Run | - | https://guifabri.github.io/wdd131/place.html | Run audit and verify weather/windchill checks. |
 | W04 | Filtered Temples | `filtered-temples.html` | https://byui-cse.github.io/wdd-audits/wdd131-w04-picture-album.html | Not Run | - | https://guifabri.github.io/wdd131/filtered-temples.html | Run audit and verify filter criteria behavior. |
@@ -31,3 +31,15 @@ Use this block whenever an audit fails.
 - Local re-test plan:
 - Re-audit criterion (what must pass next run):
 - Tracking issue/reference:
+
+### [Week W01] Failure Entry - 2026-05-21
+- Audit URL: https://byui-cse.github.io/wdd-audits/wdd131-w01-homepage.html
+- Published URL tested: https://guifabri.github.io/wdd131/
+- Result: Fail
+- Failure category: JS/CSS behavior
+- Observed failure summary: `images/profile.png` (485 kB) and `images/landscape.png` (1058 kB) exceeded the `<=125 kB` image requirement.
+- Root cause hypothesis: Original source images were not optimized for web delivery.
+- Minimal fix plan: Generate optimized local images under 125 kB and keep equivalent visual content/reference paths updated in `index.html`.
+- Local re-test plan: Verify new asset sizes in repo and ensure page renders images with same alt text and dimensions.
+- Re-audit criterion (what must pass next run): Image check shows size pass for all images on W01 page.
+- Tracking issue/reference: W01-AUDIT-IMG-SIZE

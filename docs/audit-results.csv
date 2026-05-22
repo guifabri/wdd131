@@ -8,3 +8,5 @@ W06,N/A,https://guifabri.github.io/wdd131/project/,Not Run,2026-05-21,guifabri,M
 W07,N/A,N/A,Not Run,2026-05-21,guifabri,Exam prep week (no technical audit),
 W01,N/A,https://guifabri.github.io/wdd131/,Not Run,2026-05-21,guifabri,Local pre-audit implementation/checklist completed; pending official BYUI audit run,
 W01,https://byui-cse.github.io/wdd-audits/wdd131-w01-homepage.html,https://guifabri.github.io/wdd131/,Blocked,2026-05-21,guifabri,Could not execute interactive BYUI audit in this CLI environment (no Node/NPX/browser automation available). Run in browser with ?user=guifabri,W01-AUDIT-BLOCKED-ENV
+W01,https://byui-cse.github.io/wdd-audits/wdd131-w01-homepage.html,https://guifabri.github.io/wdd131/,Fail,2026-05-21,guifabri,Audit failed: image size exceeded 125kB for profile/landscape assets,W01-AUDIT-IMG-SIZE
+W01,N/A,https://guifabri.github.io/wdd131/,Not Run,2026-05-21,guifabri,Remediation applied: switched to optimized images/profile.jpg (4.7kB) and images/landscape.jpg (71.5kB); pending re-audit,W01-AUDIT-IMG-SIZE

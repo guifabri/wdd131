@@ -5,8 +5,10 @@
     --secondary-color: #0088a9;
     --accent-color: #e7e7de;
     --text-color: #333333;
+    --muted-text-color: #555555;
     --bg-color: #f4f4f4;
     --white: #ffffff;
+    --shadow-color: #0000001a;
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Roboto', sans-serif;
 }
@@ -93,7 +95,7 @@ main h1 {
 .card {
     background-color: var(--white);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow-color);
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s ease;
@@ -118,7 +120,7 @@ main h1 {
 
 .card p {
     font-size: 1rem;
-    color: #555;
+    color: var(--muted-text-color);
 }
 
 /* Footer */
