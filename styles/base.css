@@ -1,10 +1,5 @@
 /* Base CSS for WDD 131 Home Page */
 
-:root {
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Roboto', sans-serif;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +7,7 @@
 }
 
 body {
-    font-family: var(--font-body);
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333333;
     line-height: 1.6;
@@ -28,7 +23,7 @@ header {
 
 header span#course-title {
     display: block;
-    font-family: var(--font-heading);
+    font-family: 'Playfair Display', serif;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -64,7 +59,7 @@ main {
 }
 
 main h1 {
-    font-family: var(--font-heading);
+    font-family: 'Playfair Display', serif;
     text-align: center;
     color: #0f3057;
     margin-bottom: 2rem;
@@ -98,7 +93,7 @@ main h1 {
 }
 
 .card h2 {
-    font-family: var(--font-heading);
+    font-family: 'Playfair Display', serif;
     color: #006d88;
     margin-bottom: 1rem;
 }
